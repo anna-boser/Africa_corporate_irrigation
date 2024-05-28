@@ -1,7 +1,7 @@
 # Africa_corporate_irrigation
  Project exploring drivers of corporate irrigation expansion
 
-## Installation instructions
+## Instructions
 
 1. Install [Conda](http://conda.io/)
 
@@ -31,3 +31,7 @@ The data from 2000 can be obtained analogously.
 ### Other data
 
 All data is either created using the code in this repository or can be downloaded elsewhere. Refer to the `config.yaml` file for links to and descriptions of datasets. 
+
+4. Run the files
+
+Run the files in the order their numbered names suggest in order to recreate the entire project. 
