@@ -9,12 +9,10 @@ CPIS_2021_shp_path: 'data/raw/CPIS/World_CPIS_2021.shp' # from https://github.co
 Africa_countries_shp_path: 'data/raw/Africa_Boundaries-shp/Africa_Boundaries.shp' # from https://hub.arcgis.com/datasets/07610d73964e4d39ab62c4245d548625/explore
 Africa_CPIS_2000_shp_path: 'data/raw/CPIS/Africa_CPIS_2000.shp' # same as CPIS_2000_shp_path but filtered to Africa
 Africa_CPIS_2021_shp_path: 'data/raw/CPIS/Africa_CPIS_2021.shp' # same as CPIS_2021_shp_path but filtered to Africa
-government_effectiveness_path: 'data/raw/government_effectiveness/government_effectiveness.csv' # from https://data.worldbank.org/indicator/GE.EST. Renamed and header removed
+Africa_CPIS_shp_path: 'data/raw/CPIS/Africa_CPIS.shp' # merged Africa_CPIS_2000_shp_path and Africa_CPIS_2021_shp_path
+government_effectiveness_path: 'data/raw/government_effectiveness/government_effectiveness.csv' # from https://data.worldbank.org/indicator/GE.EST. Renamed, header removed, empty and irrelevant columns (e.g. what the value is) removed.
 SPEI_12_path: 'data/raw/SPEI_drought/spei12.nc' # from https://data.ceda.ac.uk/neodc/spei_africa/data. This one is at a 12 month scale.
 
 # processed data
-
-# outputs
-CPIS_change_country_map_path: 'outputs/CPIS_change_country_map.pdf'
-CPIS_2000_country_map_path: 'outputs/CPIS_2000_country_map.pdf'
-CPIS_2021_country_map_path: 'outputs/CPIS_2021_country_map.pdf'
+country_CPIS_count: 'data/processed/country_CPIS_count.csv' # number of CPIS points per country
+Africa_CPIS_GEI_shp_path: 'data/processed/CPIS/Africa_CPIS_GEI.shp' # Africa_CPIS_shp_path with government effectiveness data
