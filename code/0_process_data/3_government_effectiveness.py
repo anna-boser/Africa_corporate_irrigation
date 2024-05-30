@@ -26,10 +26,10 @@ GEI = utils.create_lagged_column(GEI, 'GEI', 2)
 GEI = utils.create_lagged_column(GEI, 'GEI', 4)
 
 # read in the 2000 and 2021 cpis data
-CPIS = gpd.read_file(config["Africa_CPIS_shp_path"])
+CPIS = gpd.read_file(config["empty_panel_CPIS_shp_path"])
 
 # Add GEI information to the CPIS data by matching on year and country
 CPIS = CPIS.merge(GEI, on=['Year', 'Country', 'Country Co'])
 
 # Save the CPIS data with GEI information
-CPIS.to_file(config["Africa_CPIS_GEI_shp_path"])
+CPIS.to_file(config["CPIS_GEI_shp_path"])
